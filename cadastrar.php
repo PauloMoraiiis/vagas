@@ -14,7 +14,7 @@
         $obVaga->ativo = $_POST['ativo'];
         $obVaga->cadastrar();
 
-        echo "<pre>"; print_r($obVaga); echo "</pre>"; exit;
+        
 
     }
 

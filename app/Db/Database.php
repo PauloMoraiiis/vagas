@@ -71,6 +71,52 @@ class Database{
           die('ERROR: '.$e->getMessage());
         }
     }
+
+
+    
+
+
+
+    /**
+     * Método responsável por inserir dados no banco
+     * @param array $values [ field => value]
+     * @return PDOStatement
+     */
+    public function execute($query, $params = []) {
+      try{
+        $statement = $this->connection->prepare($query);
+        $statement->execute($params);
+        return $statement;
+      }catch(PDOException $e){
+          die('ERROR: '.$e->getMessage());
+        }
+
+    }
+
+
+    /**
+     * Método responsável por inserir dados no banco
+     * @param array $values [ field => value ]
+     * @return integer Id inserido
+     */
+    public function insert($values){
+      //DADOS DA QUERY
+      $fields = array_keys($values);
+      $binds = array_pad([],count($fields), '?');
+
+      
+      
+
+      //MONTA A QUERY
+      $query = 'INSERT INTO '.$this->table.' vagas ('.implode(',',$fields).') VALUES ('.implode(',',$binds).')';
+
+      //EXECUTA O INSERT
+      $this->execute($query,array_values($values));
+
+      //RETORNA O ID INSERIDO
+      return $this->connection->lastInsertId();
+
+    }
     
         
     
