@@ -1,3 +1,14 @@
+#Listar
+![listar](https://user-images.githubusercontent.com/87495655/154093442-0baf2635-1c8c-4f06-b3ac-51062653c1ab.png)
+
+#Cadastrar
+![cadastrar](https://user-images.githubusercontent.com/87495655/154093974-ecb0de7c-d784-4327-9da5-c8aa036437c5.png)
+
+#Editar
+![editar](https://user-images.githubusercontent.com/87495655/154094069-6eb228e3-fadf-40e8-ac8e-3ff63f73b444.png)
+
+#Excluir
+![excluir](https://user-images.githubusercontent.com/87495655/154094161-af514097-93dc-4f3b-a5e6-0cd033eacfa5.png)
 
 
 
