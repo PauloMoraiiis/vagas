@@ -10,6 +10,11 @@
 #Excluir
 ![excluir](https://user-images.githubusercontent.com/87495655/154094161-af514097-93dc-4f3b-a5e6-0cd033eacfa5.png)
 
+#Filtrar
+![Filtrar](https://user-images.githubusercontent.com/87495655/154136757-96f63b4e-e836-4530-9266-19ebceb3d1e7.png)
+
+
+
 
 
 ## CRUD com PHP orientado a objetos, PDO e MySQL
