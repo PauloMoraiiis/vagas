@@ -37,6 +37,25 @@
                                                         </tr>';
 
 
+    //GETS
+    unset($_GET['status']);
+    unset($_GET['pagina']);
+    $gets = http_build_query($_GET);
+
+    //PAGINAÇÃO
+    $paginacao = '';
+    $paginas = $obPagination -> getPages();
+    foreach($paginas as $key=>$pagina){
+        $class = $pagina['atual'] ? 'btn-primary' : 'btn-light';
+        $paginacao .= 
+        '<a href="?pagina='.$pagina['pagina'].'&'.$gets.'">
+        <button type="button" class="btn '.$class.'">'.$pagina['pagina'].'</button>
+        </a>';
+    }
+    
+    
+
+
 ?>
 <main>
 
@@ -58,7 +77,7 @@
 
                 <div class="col">
                     <label>Status</label>
-                    <select name="status" class="form-control">
+                    <select name="filtroStatus" class="form-control">
                         <option value="">Ativa/Inativa</option>
                         <option value="s" <?=$filtroStatus == 's' ? 'selected' : ''?>>Ativa</option>
                         <option value="n" <?=$filtroStatus == 'n' ? 'selected' : ''?>>Inativa</option>
@@ -88,6 +107,10 @@
                 <?=$resultados?>
             </tbody>
         </table>
+    </section>
+
+    <section>
+        <?=$paginacao?>
     </section>
 
 </main>
