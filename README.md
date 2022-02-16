@@ -13,6 +13,10 @@
 #Filtrar
 ![Filtrar](https://user-images.githubusercontent.com/87495655/154137643-68073f63-4ba3-4217-adaf-42bb8dc715d1.png)
 
+#Paginação
+![Paginacao](https://user-images.githubusercontent.com/87495655/154316187-94450613-8933-4547-9bc5-a120cde132b8.png)
+
+
 
 
 

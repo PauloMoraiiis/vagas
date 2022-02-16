@@ -49,7 +49,7 @@
         $class = $pagina['atual'] ? 'btn-primary' : 'btn-light';
         $paginacao .= 
         '<a href="?pagina='.$pagina['pagina'].'&'.$gets.'">
-        <button type="button" class="btn '.$class.'">'.$pagina['pagina'].'</button>
+        <button type="button" class="btn '.$class.' mb-5">'.$pagina['pagina'].'</button>
         </a>';
     }
     
