@@ -16,6 +16,10 @@
 #Paginação
 ![Paginacao](https://user-images.githubusercontent.com/87495655/154316187-94450613-8933-4547-9bc5-a120cde132b8.png)
 
+#Login
+![login](https://user-images.githubusercontent.com/87495655/154959999-bfd851c1-6143-4197-b5f3-f897a5361ced.png)
+
+
 
 
 
@@ -39,6 +43,18 @@ Crie um banco de dados e execute as instruções SQLs abaixo para criar a tabela
   COLLATE='utf8_general_ci'
   ENGINE=InnoDB
   AUTO_INCREMENT=1;
+```
+
+Crie um banco de dados e execute as instruções SQLs abaixo para criar a tabela `usuarios`:
+```sql
+  CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 ```
 
 ## Configuração
