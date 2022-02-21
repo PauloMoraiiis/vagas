@@ -51,7 +51,12 @@ class Usuario{
 
         //SUCESSO
         return true;
+ 
+    }
 
+    //Método respomsável por retornar uma instancia de usuário com base em seu e-mail
+    public static function getUsuarioPorEmail($email){
+        return (new Database('usuarios'))->select('email = "'.$email.'"')->fetchObject(self::class);
     }
 }
 
